@@ -1,0 +1,23 @@
+header {
+    color: blue;
+    margin-left: 100px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+footer {
+    color: red;
+    margin-left: 100px;
+    font-style: italic;
+}
+
+
+.machine.active {
+    color:green;
+}
+
+.machine {
+    margin-left: 50px;
+    color: grey;
+    font-family: monospace;
+}

@@ -6,9 +6,21 @@
 import React from 'react';
 
 class Machine extends React.Component {
-  render() {
+    render() {
     // Dans tous les cas, afficher
-    return <p>Machine 1</p>
+     
+    return (
+      <div className='machine'
+      className={this.props.isActive ? "machine active" : "machine"}>
+      <h2> {this.props.title} | {this.props.isActive} </h2>
+      <button>
+      {this.props.isActive? 'true' : 'false'}
+      </button>
+      
+     
+      
+      </div>
+      )
   }
 }
 
