@@ -11,15 +11,15 @@ constructor(props) {
   super(props)
     this.state = {
       machines:[
-       { 
-          name : "Machine à café", 
-          isActive : true}, 
-        { 
-          name : "Machine à thé ", 
-          isActive : false}, 
-        { 
-          name : "Machine à chocolat", 
-          isActive : true}
+       {id:0,
+        name : "Machine à café", 
+        isActive : true}, 
+        { id:1,
+        name : "Machine à thé ", 
+        isActive : false}, 
+        { id:2,
+        name : "Machine à chocolat", 
+        isActive : true}
       
     ]
     };
@@ -34,8 +34,9 @@ constructor(props) {
         {
           this.state.machines.map(machine => 
           //console.log(machine.name))
-          <Machine title={machine.name} 
-          isActive={machine.isActive} />
+          <Machine name={machine.name} 
+                  key={machine.id}
+                  isActive={machine.isActive} />
           
         // <Machine title ={this.state.machines[0].name}  isActive= {this.state.machines[0].isActive} />
         //<Machine title ={this.state.machines[1].name}  isActive= {this.state.machines[1].isActive}/>
