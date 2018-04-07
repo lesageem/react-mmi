@@ -4,8 +4,15 @@ import Machine from '../../components/Machine.js';
 import Header from '../../components/Header.js';
 import Footer from '../../components/Footer.js';
 import CSS from '../../css/style.css';
+import { Router, Route, Switch } from 'react-router';
+ 
+
+
 
 class App extends React.Component {
+  
+   
+    
   
 constructor(props) {
   super(props)
@@ -19,10 +26,11 @@ constructor(props) {
         isActive : false}, 
         { id:2,
         name : "Machine à chocolat", 
-        isActive : true}
-      
-    ]
+        isActive : true
+        }
+      ]
     };
+   
   
 }
   

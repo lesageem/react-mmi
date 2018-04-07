@@ -5,11 +5,21 @@
  */
 import React from 'react';
 
+
 class Machine extends React.Component {
+
+    
     handleClick(){
+        this.setState(prevState => ({
+        isActive: !prevState.isActive
+    }));
+  
+        
         console.log('Hello');
         console.log(this.props.name);
     }
+    
+    
    render() {
     // Dans tous les cas, afficher
     return (
@@ -17,7 +27,9 @@ class Machine extends React.Component {
     className={this.props.isActive ? "machine active" : "machine"}>
     <h2> {this.props.name} </h2>
     <button onClick={(e) => this.handleClick(e)} type="button" className="btn" >
-        Toggle
+       {this.props.isActive ? 'True' : 'False'}
+       
+        
     </button>
       
     </div>
