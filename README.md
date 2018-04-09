@@ -18,6 +18,48 @@ Travail par groupes de 2, production individuelle.
 - Affichez des données dynamiques dans le composant Machine en lui passant du texte via des Props depuis App/index.js
 - Créez un composant Header, et un composant Footer.
 
+
+# Développement de l'application
+### Modalités 
+Travail par groupes de 2, production individuelle.
+
+### Objectif 
+- Utiliser Git en situation
+- Découvrir et utiliser le state de React.js
+- Écouter des évènements et les lier à des méthodes.
+- Ajouter un composant externe dans le projet
+
+## Consignes
+
+### Gérer son code avec Git
+- Suivre le tuto :
+https://docs.google.com/document/d/1uQuQNz9Dj4QouTHlxnpFPNZvizns5TTzpcWtkAjf-d8/edit
+
+### Lister nos machines depuis le state
+- Convertir la fonction App en classe.
+- Renseigner un state et y rajouter notre donnée : nom des machines et leur état
+- Afficher la liste des machines en appellant le state
+- Boucler sur cette donnée pour afficher la liste.
+https://reactjs.org/docs/state-and-lifecycle.html
+
+### Event : écouter le clic sur un bouton
+- Ajouter un bouton par Machine pour l'activer / désactiver
+- Écouter l'évènement clic sur ce bouton
+- Inverser l'état actif / inactif d'une machine au clic sur le bouton
+https://reactjs.org/docs/handling-events.html
+
+### Ajouter un composant externe
+- Charger un composant externe avec npm : un toggle
+- Remplacer le bouton activer / désactiver par ce composant
+
+### Naviguer sur une page produit
+- On a besoin de voir le détail de la machine, pour la localiser grâce à une carte. 
+- Router : utiliser React Router pour naviguer sur différentes pages. 
+- Ajouter une carte Google Maps sur la page produit
+https://github.com/ReactTraining/react-router
+
+### déployer avec netlify
+
 ## Documentation
 
 - [**The Hitchhikers Guide to `react-boilerplate`**](docs/general/introduction.md): An introduction for newcomers to this boilerplate.
@@ -28,35 +70,6 @@ Travail par groupes de 2, production individuelle.
 - [Your app](docs/js): Supercharging your app with Routing, Redux, simple
   asynchronicity helpers, etc.
 - [**Troubleshooting**](docs/general/gotchas.md): Solutions to common problems faced by developers.
-
-## Supporters
-
-This project would not be possible without the support by these amazing folks. [**Become a sponsor**](https://opencollective.com/react-boilerplate) to get your company in front of thousands of engaged react developers and help us out!
-
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/0/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/1/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/2/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/3/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/4/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/5/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/6/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/7/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/8/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/9/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/9/avatar.svg"></a>
-
-----
-
-<a href="https://opencollective.com/react-boilerplate/backer/0/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/0/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/1/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/1/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/2/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/2/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/3/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/3/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/4/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/4/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/5/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/5/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/6/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/6/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/7/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/7/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/8/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/8/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/9/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/9/avatar.svg"></a>
-
 
 ## License
 
