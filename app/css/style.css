@@ -8,15 +8,22 @@
     font-size: 18px;
 }
 
+.Footer {
+  margin-top: 50px;
+}
+
 .machine.active {
     color:#34C924;
 }
 
 .machine {
-   
     color: #FF866A;
-   
     text-align:center;
+}
+
+.map-container {
+  height: 300px;
+  width: 100%;
 }
 
 .btn {
@@ -28,8 +35,9 @@
     text-decoration: none;
     font-size: 12px;
     border-radius: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-transform: uppercase;
+    margin-right: 30px;
 }
 
 .btn:hover {
@@ -40,7 +48,7 @@
 /* CSS TOGGLE*/
 .react-toggle {
   touch-action: pan-x;
-
+  margin-bottom: 20px;
   display: inline-block;
   position: relative;
   cursor: pointer;
@@ -82,7 +90,7 @@
   height: 24px;
   padding: 0;
   border-radius: 30px;
-  background-color: #4D4D4D;
+  background-color: #FF866A;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -114,6 +122,7 @@
   -webkit-transition: opacity 0.25s ease;
   -moz-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
+  
 }
 
 .react-toggle--checked .react-toggle-track-check {
