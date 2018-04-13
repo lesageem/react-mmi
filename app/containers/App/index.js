@@ -66,19 +66,21 @@ render() {
             index={this.state.machines[key].id}
             handleStatusChange={this.handleStatusChange}
             isActive={this.state.machines[key].isActive}/>
+            
             )}
+             {/*Affichage de la carte*/}
+            <div className="map-container">
+              <GoogleMapReact
+                bootstrapURLKeys={{ key: "AIzaSyBU_IEeDtk0fIKfm18yj8bD6DDaJ0N-3e4" }}
+                defaultCenter={this.state.center}
+                defaultZoom={this.state.zoom}>
+                <AnyReactComponent
+                lat={this.state.center.lat}
+                lng={this.state.center.lng}/>
+              </GoogleMapReact>
+            </div>
         </div>
-        {/*Affichage de la carte*/}
-        <div className="map-container">
-          <GoogleMapReact
-            bootstrapURLKeys={{ key: "AIzaSyBU_IEeDtk0fIKfm18yj8bD6DDaJ0N-3e4" }}
-            defaultCenter={this.state.center}
-            defaultZoom={this.state.zoom}>
-              <AnyReactComponent
-              lat={this.state.center.lat}
-              lng={this.state.center.lng}/>
-          </GoogleMapReact>
-        </div>
+       
         <Footer/>
       </div>
     );
