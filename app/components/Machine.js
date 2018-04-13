@@ -26,7 +26,7 @@ class Machine extends React.Component {
     className={this.props.isActive ? "machine active" : "machine"}>  {/* Si isActive passée en props est à true, ajouter la classe "active" */}
     <h2> {this.props.name} </h2>
     {/* On appelle handleClick avec (e) pour pouvoir accéder à this*/}
-     {/*  <button onClick={(e) => this.onhandleClick(e)} type="button" className="btn">
+    {/*  <button onClick={(e) => this.onhandleClick(e)} type="button" className="btn">
     {this.props.isActive ? "ACTIVÉE" : "DÉSACTIVÉE"}
     </button>*/}
   <label>

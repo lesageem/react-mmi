@@ -4,6 +4,7 @@ import GoogleMapReact from 'google-map-react';
 import Machine from '../../components/Machine.js';
 import Header from '../../components/Header.js';
 import Footer from '../../components/Footer.js';
+import AddMachine from '../../components/AddMachine.js';
 import CSS from '../../css/style.css';
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -11,36 +12,41 @@ class App extends React.Component {
 
 constructor(props) {
   super(props);
+  
   this.handleStatusChange = this.handleStatusChange.bind(this);
   this.state = {
-     center: {
+    center: {
       lat: 48.8566,
       lng: 2.3522
-      },
-      zoom: 11,
+    },
+    zoom: 11,
+    
     machines:[
-     {id:0,
-      name : "Machine à café", 
-      isActive : true}, 
+      {id:0,
+        name : "Machine à café", 
+        isActive : true}, 
       { id:1,
-      name : "Machine à thé ", 
-      isActive : false}, 
+        name : "Machine à thé ", 
+        isActive : false}, 
       { id:2,
-      name : "Machine à chocolat", 
-      isActive : true
+        name : "Machine à chocolat", 
+        isActive : true
       },
       { id:3,
-      name : "Machine à eau ", 
-      isActive : false
+        name : "Machine à eau ", 
+        isActive : false
       }
     ]
+    
   };
+  
 }
+
  // Méthode pour activer une machine
 handleStatusChange(key) {
 // 1. On copie le state existant
   const machines = { ...this.state.machines };
-  console.log(machines[key].isActive)
+  console.log(machines[key].isActive);
 // 2. On modifie le status de CETTE machine
   machines[key].isActive = !machines[key].isActive;
 // On verifie dans la console
@@ -48,11 +54,13 @@ handleStatusChange(key) {
 // 3. On applique cette nouvelle collection au state
   this.setState({ machines });
 }
-  
+
+
 render() {
   return (
     <div className="main">
       <Header/>
+      <AddMachine />
                {/*Conteneur de notre liste*/}
       <div className="machines-list">
         {/*Boucle sur notre collection de machines*/}
@@ -79,6 +87,7 @@ render() {
                 lng={this.state.center.lng}/>
               </GoogleMapReact>
             </div>
+          
         </div>
        
         <Footer/>
