@@ -1,13 +1,9 @@
-/**
- *
- * Footer.js
- *
- */
+
 import React from 'react';
 
 class Footer extends React.Component {
   render() {
-    return <div className='Footer'>Footer</div>
+    return <div className='Footer'>Footer</div>;
   }
 }
 

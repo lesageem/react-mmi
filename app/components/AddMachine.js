@@ -1,28 +1,33 @@
 import React from 'react';
 
-class AddMachine extends React.Component {
-  
+class AddMachineForm extends React.Component {
+  onAddClick(event) {
+    // Empêcher le rechargement de la page
+    event.preventDefault();
+
+    // On stocke les valeurs du formulaire dans une variable newMachine
+    const newMachine = {
+      name: this.name.value,
+      status: this.status.value
+    }
+
+    // On envoie cette variable via des props à la méthode addMachineToState()
+    // ...
+  }
 
   render() {
-    return(
-      
-     <form  className="form" ref="MachineForm"onSubmit={(e) => this.props.addMachineToState(e)}>
-        <div className="form-group">
-        <label for="machineItem">
-          Nom:
-          <input type="text" name="name" id="machineItem" placeholder="Machine à..." ref="fruitName" className="form-control" />
-        </label>
-        <select>
-          <option value="true">Activée</option>
-          <option value="false">Désactivée</option>
+    return (
+      // On a passé addMachineToState en props depuis App
+      <form ref={(input) => this.machineForm = input} onSubmit={(e) => this.onAddClick(e)} className="add-machine-form">
+        <input ref={(input) => this.name = input} type="text"  placeholder="Nom de la machine" />
+        <select ref={(input) => this.status = input}>
+          <option value="active">Activer</option>
+          <option value="inactive">Désactiver</option>
         </select>
-        <input type="submit" value="Ajouter"></input>
-        </div>
+        <button type="submit" className="btn">+ Ajouter une machine</button>
       </form>
-    );
+    )
   }
 }
 
- 
-
-export default AddMachine;
+export default AddMachineForm;
