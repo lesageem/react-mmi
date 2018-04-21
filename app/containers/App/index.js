@@ -5,6 +5,8 @@ import Machine from '../../components/Machine.js';
 import Header from '../../components/Header.js';
 import Footer from '../../components/Footer.js';
 import AddMachine from '../../components/AddMachine.js';
+//React-Router
+import { Router, Route, Switch } from 'react-router'
 //Importer la CSS
 import CSS from '../../css/style.css';
 
