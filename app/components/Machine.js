@@ -30,6 +30,7 @@ class Machine extends React.Component {
     {this.props.isActive ? "ACTIVÉE" : "DÉSACTIVÉE"}
     </button>*/}
   <label>
+  {/* Ajout du Toggle*/}
     <Toggle
       checked={this.props.isActive}
       onClick={(e) => this.onhandleClick(e)} />

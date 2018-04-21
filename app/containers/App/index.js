@@ -78,7 +78,7 @@ class App extends React.Component {
       return isAvailable ? prevTotal + 1 : prevTotal
     }, 0);
     const total = machinesIds.length;
-
+   
 
   //affichage
   return (
@@ -114,6 +114,12 @@ class App extends React.Component {
             </GoogleMapReact>
           </div>
         </div>
+        <br/>
+        <br/>
+        {/* Nombre total de machine */}
+         <div className="counter">
+        <strong>{total}</strong> Machines
+      </div>
         <Footer/>
       </div>
     );
